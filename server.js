@@ -30,7 +30,7 @@ app.post('/login', function (req, res) {
 	// Typically passwords are encrypted using something like bcrypt before sending to database
 	const username = req.body.username;
 	const password = req.body.password;
-
+  console.log(username);
 	// This should come from the database
 	const mockUsername = "billyTheKid";
 	const mockPassword = "superSecret";
